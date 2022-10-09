@@ -1,0 +1,155 @@
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+@font-face {
+    font-family: Jakarta;
+    src: url(assets/fonts/PlusJakartaSans-VariableFont_wght.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Jakarta;
+}
+
+body {
+    background-image: url(assets/images/favicon-32x32.png);
+}
+
+.container {
+    width: 1440px;
+    margin: 200px auto;
+    background-color: hsl(210, 60%, 98%);
+    box-shadow: 2px 2px 100px 1px lightgray;
+    display: flex;
+    flex-direction: column;
+    padding: 100px 365px 100px 365px;
+}
+
+/* Notification */
+.notification {
+    display: flex;
+    margin: 20px;
+    justify-content: space-between;
+}
+
+.left {
+    display: flex;
+    align-items: center;
+}
+
+.notification h1 {
+    color: hsl(224, 21%, 14%);
+}
+
+.notification .border {
+    display: flex;
+    justify-content: center;
+    width: 37px;
+    height: 29px;
+    margin-left: 20px;
+    color: white;
+}
+
+.notification .border {
+    padding: 2px;
+    border-radius: 6px;
+    background-color: hsl(219, 85%, 26%);
+}
+
+.notification a {
+    font-weight: 600;
+    color: hsl(219, 12%, 42%);
+    text-decoration: none;
+}
+
+.notification a:hover {
+    color: hsl(219, 85%, 26%);
+}
+
+/* end of notification */
+
+/* Content */
+.content {
+    font-size: 1.1rem;
+}
+
+.notif {
+    display: flex;
+    margin: 5px 0 0 20px;
+    flex-direction: column;
+}
+
+.group {
+    display: flex;
+    margin: 20px 0 50px 20px;
+}
+
+.mark {
+    font-weight: 900;
+    color: hsl(224, 21%, 14%);
+}
+
+.mark:hover {
+    color: hsl(219, 85%, 26%);
+    cursor: pointer;
+}
+
+img {
+    width: 60px;
+    height: 60px;
+}
+
+.notif h5,
+p {
+    color: hsl(219, 14%, 63%);
+}
+
+.right-text {
+    cursor: pointer;
+}
+
+.img-msg {
+    margin-left: auto;
+}
+
+.img-msg:hover {
+    cursor: pointer;
+}
+
+.message {
+    border: 1px solid hsl(205, 33%, 90%);
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.message:hover {
+    background-color: hsl(211, 68%, 94%);
+    cursor: pointer;
+}
+
+.dot {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: hsl(1, 90%, 64%);
+    line-height: 5px;
+}
+
+@media (max-width: 375px) {
+    .container {
+        width: 100vw;
+        padding: 10px;
+    }
+    * {
+        font-size: 1rem;
+    }
+}
